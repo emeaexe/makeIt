@@ -6,7 +6,15 @@ var arraytext = arraytext + "fondo/"
 console.log("IT WORKS.")
 console.log(arraytext);
 
-$('document').ready(function(){
-	var bckImg = "url(" + arraytext + "a.png)"
-	document.body.style.backgroundImage = bckImg;
-});
+function randombg(){
+  var random = Math.floor(Math.random() * 4) + 0;
+  if (random < 1){
+  		var random = 4;
+  }
+  var bigSize = [,"url(" + arraytext + "a.png)",
+                "url(" + arraytext + "b.png)",
+                "url(" + arraytext + "c.png)",
+                "url(" + arraytext + "d.png)"];
+  document.body.style.backgroundImage = bigSize[random];
+  console.log(random);
+}
