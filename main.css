@@ -1,0 +1,72 @@
+iframe{
+	width: 500px;
+	height: 500px;
+	position: center;
+}
+
+footer{
+	background-color: black;
+}
+
+.keRecicla{
+	position: absolute;
+	font-size: 52;
+	line-height: 1;
+	top: 170;
+}
+
+.searcher{
+	position: absolute;
+	line-height: 1;
+	top: 300;
+	width: 40em;
+	left: 370;
+}
+
+button{
+	position: absolute;
+	line-height: 1;
+	top: 300;
+	right: 435;
+}
+
+.cont{
+	position: absolute;
+	line-height: 1;
+	top: 325;
+	left: 400;
+}
+
+.cre{
+	position: absolute;
+	line-height: 1;
+	top: 325;
+	right: 500;
+}
+
+.cent{
+	width: 50%;
+	margin: 0 auto;
+	padding: 10% 0;
+}
+
+body {
+	padding: 5% 0;
+	width:100%
+	text-align: center;
+	font-family: 'Muli', sans-serif;
+	background-image: url("fondo/a.png");
+	background-size: cover;
+	padding-bottom:60px;   /* Height of the footer */
+}
+footer {
+	position:absolute;
+	bottom:0;
+	width: 83em;
+	height:60px;   /* Height of the footer */
+	background: black;
+}
+
+#foot{
+	color: white;
+}
