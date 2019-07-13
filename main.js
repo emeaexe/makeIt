@@ -5,7 +5,7 @@ var arraytext = locarray.join("/");
 var itemsPath = arraytext + "items/"
 var arraytext = arraytext + "fondo/"
 console.log("IT WORKS.")
-console.log(arraytext);
+console.log(itemsPath);
 
 function randombg(){
   var random = Math.floor(Math.random() * 4) + 0;
