@@ -1,17 +1,38 @@
+<html lang="es-Ar">
 <head>
+	<title>Contacto - MakeIt</title>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 	<link rel="icon" type="image/png" href="favicon.png">
-	<title>Contacto</title>
-	<link href="secundario.css" rel="stylesheet" type="text/css" />
+	<script src="https://smtpjs.com/v3/smtp.js"></script>
+	<link href="contacto.css" rel="stylesheet" type="text/css" />
 	<link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i&display=swap&subset=latin-ext" rel="stylesheet">
 </head>
-<body>
-   	<h1>CONTACTO</h1>
-	</div>
-	 	<!iframe src="lata.html"></!iframe>
+<body onload="randombg()">
+	<h1>Contacto</h1>
+	<hr>
+	<form action="/#" method="post">
+		<div>
+			<label for="name">Nombre:</label>
+    		<input type="text" id="name" name="user_name" onfocus="this.value=''">
+  		</div>
+ 		<div>
+   			<label for="mail">E-mail:</label>
+			<input type="email" id="mail" name="user_mail" onfocus="this.value=''">
+		</div>
+  		<div>
+			<label for="msg">Mensaje:</label>
+		    <textarea id="msg" name="user_message"></textarea>
+		</div>
+		<div class="button">
+			<button onclick="saveTextAsFile()">Enviar</button>
+		</div>
+	</form>
 </body>
+<script src="secundario.js"></script>
 <footer>
 	<p id="foot">
 	MakeIt Cordoba. 2019
 	Creative coomons - Atribución(?
 	</p>
 </footer>
+</html>

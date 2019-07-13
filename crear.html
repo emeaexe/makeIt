@@ -1,17 +1,56 @@
 <head>
-	<title>Crear entrada</title>
+	<title>MakeIt</title>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="FileSaver.js"></script>
 	<link rel="icon" type="image/png" href="favicon.png">
-	<link href="secundario.css" rel="stylesheet" type="text/css" />
+	<link href="crear.css" rel="stylesheet" type="text/css" />
 	<link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i&display=swap&subset=latin-ext" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
-<body>
-
+<body onload="randombg()">
+	<form action="" method="post">
+		<div>
+			<label for="name">Nombre del objeto:</label>
+    		<input type="text" id="name" name="item_name" onfocus="this.value=''">
+  		</div>
+ 		<div>
+   			<label for="altName">Nombres alternativos:</label>
+			<input type="text" class="altName" name="itemAltName" onfocus="this.value=''">
+			<input type="text" class="altName" name="itemAltName" onfocus="this.value=''">
+			<input type="text" class="altName" name="itemAltName" onfocus="this.value=''">
+		</div>
+  		<div>
+			<label for="desc">Descripción:</label>
+		    <textarea id="desc" name="desc">Describe el objeto a reciclar...</textarea>
+		</div>
+		<div>
+			<h3>Desechado:</h3>
+				<input type="text" name="desecha" onfocus="this.value=''" placeholder="Seco, limpio, desarmado..." id="desecha">
+				<p>En bolsa...</p>
+				<label>Verde</label><input type="checkbox" name="verde" id="verde"><label>Negra</label><input type="checkbox" name="negra" id="negra"><a href="https://recuperandovalor.cordoba.gob.ar/buscador/">Consultar horario de recolección para tu barrio (beta)</a>
+		</div>
+		<div>
+			<h3>Materiales que lo componen:</h3>
+			<label>Metal</label><input type="checkbox" name="check" id="metal"><input type="text" class="metal" name="metal" onfocus="this.value=''" placeholder="Bronce, Acero..." id="tipoMetal">
+			<label>Plástico</label><input type="checkbox" name="check" id="plastic"><input type="text" class="plastic" name="plastic" onfocus="this.value=''" placeholder="1 PET, 5 PP, tergopor, PVC." id="plasticType">
+			<label>Madera/ MDF/ Enchapado</label><input type="checkbox" name="check" id="madera">
+			<label>Cartón/Papel</label><input type="checkbox" name="check" id="papel">
+			<label>Tela</label><input type="checkbox" name="check" id="tela"><input type="text" id="telaTipo" name="tela" onfocus="this.value=''" placeholder="Algodón, Lino, Poliéster.">
+		</div>
+		<dir>
+			<h3>Cómo se recicla?</h3>
+			<textarea id="reciclado">Describí cómo se recicla. Se puede desarmar? Hay que limpiarlo? Hace falta alguna herramienta? Calor? Secar al sol?</textarea>
+		</dir>
+		<dir>
+			<h3>Qué se puede hacer?</h3>
+			<input type="text" name="idea1" id="idea1" placeholder="Idea 1..."><input type="text" name="link1" id="link1" placeholder="Link...">
+			<input type="text" name="idea2" id="idea2" placeholder="Idea 2..."><input type="text" name="link2" id="link2" placeholder="Link...">
+			<input type="text" name="idea3" id="idea3" placeholder="Idea 3..."><input type="text" name="link3" id="link3" placeholder="Link...">
+		</dir>
+	</form>
+	<div class="button">
+		<button id="save">Guardar</button>
 	</div>
-	 	<!iframe src="lata.html"></!iframe>
 </body>
-<footer>
-	<p id="foot">
-	MakeIt Cordoba. 2019
-	Creative coomons - Atribución(?
-	</p>
-</footer>
+<script src="secundario.js"></script>
+</html>

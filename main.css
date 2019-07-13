@@ -1,9 +1,3 @@
-iframe{
-	width: 500px;
-	height: 500px;
-	position: center;
-}
-
 footer{
 	background-color: black;
 }
@@ -15,7 +9,7 @@ footer{
 	top: 170;
 }
 
-.searcher{
+#searcher{
 	position: absolute;
 	line-height: 1;
 	top: 300;
