@@ -2,6 +2,10 @@ footer{
 	background-color: black;
 }
 
+#creative{
+	width: 5%;
+}
+
 .keRecicla{
 	position: absolute;
 	font-size: 52;
@@ -44,15 +48,28 @@ button{
 	padding: 10% 0;
 }
 
+rgba(204,204,204,0.2)
+
+#cover{
+	padding: 5% 0;
+	width:100%
+	height: 100%;
+	text-align: center;
+	padding-bottom:60px;   /* Height of the footer */
+	background-color: rgba(204,204,204,0.4);
+}
+
 body {
 	padding: 5% 0;
 	width:100%
+	height: 100%;
 	text-align: center;
 	font-family: 'Muli', sans-serif;
-	background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpKg2OhSe9f_sQ5znUyCmiM7CmU814M8fECKBwWhCCvabp3PVvsw");
 	background-size: cover;
 	padding-bottom:60px;   /* Height of the footer */
+	background-color: rgba(204,204,204,0);
 }
+
 footer {
 	position:absolute;
 	bottom:0;

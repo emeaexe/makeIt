@@ -7,21 +7,24 @@ var arraytext = arraytext + "fondo/"
 console.log("IT WORKS.")
 
 function randombg(){
-  var random = Math.floor(Math.random() * 4) + 0; //genera valor random entre 0 y 4.
+  var random = Math.floor(Math.random() * 6) + 0;
   if (random < 1){
-  		var random = 4; //si sale cero lo vuelve 4
+      var random = 6;
   }
   var bigSize = [,"url(" + arraytext + "a.png)",
                 "url(" + arraytext + "b.png)",
                 "url(" + arraytext + "c.png)",
-                "url(" + arraytext + "d.png)"];
-  document.body.style.backgroundImage = bigSize[random]; //cambia el fondo de acuerdo con el numero random
+                "url(" + arraytext + "d.png)",
+                "url(" + arraytext + "e.png)",
+                "url(" + arraytext + "f.png)",];
+  document.body.style.backgroundImage = bigSize[random];
+  console.log(random);
 }
 
-
-
+$(document).ready(function (){
 $("#save").click( function() {
   var itemName = "<h1>" + $("#name").val() + "</h1>";
+  var itemName1 = "<h1>" + $("#altName1").val() + "</h1>";
   var description = "<p>" + $("#desc").val() + "</p>";
   var desechado = "<p>" + $("#desecha").val() + "</p>";
   var enBolsa;
@@ -93,4 +96,15 @@ $("#save").click( function() {
   console.log(filename);
   var blob = new Blob([final], {type: "text/plain"});
   saveAs(blob, filename);
+  var filename =  document.getElementById("altName1").value.replace(/ /g, "-") + ".html";
+  console.log(filename);
+  saveAs(blob, filename);
+  var filename =  document.getElementById("altName2").value.replace(/ /g, "-") + ".html";
+  console.log(filename);
+  saveAs(blob, filename);
+  var filename =  document.getElementById("altName3").value.replace(/ /g, "-") + ".html";
+  saveAs(blob, filename);
+  console.log(filename);
+});
+
 });

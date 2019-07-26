@@ -1,6 +1,5 @@
 <head>
 	<title>MakeIt</title>
-	<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 	<script type="text/javascript" src="FileSaver.js"></script>
 	<link rel="icon" type="image/png" href="favicon.png">
 	<link href="crear.css" rel="stylesheet" type="text/css" />
@@ -15,9 +14,9 @@
   		</div>
  		<div>
    			<label for="altName">Nombres alternativos:</label>
-			<input type="text" class="altName" name="itemAltName" onfocus="this.value=''">
-			<input type="text" class="altName" name="itemAltName" onfocus="this.value=''">
-			<input type="text" class="altName" name="itemAltName" onfocus="this.value=''">
+			<input type="text" id="altName1" name="itemAltName" onfocus="this.value=''">
+			<input type="text" id="altName2" name="itemAltName" onfocus="this.value=''">
+			<input type="text" id="altName3" name="itemAltName" onfocus="this.value=''">
 		</div>
   		<div>
 			<label for="desc">Descripción:</label>
@@ -32,7 +31,7 @@
 		<div>
 			<h3>Materiales que lo componen:</h3>
 			<label>Metal</label><input type="checkbox" name="check" id="metal"><input type="text" class="metal" name="metal" onfocus="this.value=''" placeholder="Bronce, Acero..." id="tipoMetal">
-			<label>Plástico</label><input type="checkbox" name="check" id="plastic"><input type="text" class="plastic" name="plastic" onfocus="this.value=''" placeholder="1 PET, 5 PP, tergopor, PVC." id="plasticType">
+			<label>Plástico</label><input type="checkbox" name="check" id="plastic"><input type="text" class="plastic" name="plastic" onfocus="this.value=''" placeholder="1 PET, 5 PP, telgopor, PVC." id="plasticType">
 			<label>Madera/ MDF/ Enchapado</label><input type="checkbox" name="check" id="madera">
 			<label>Cartón/Papel</label><input type="checkbox" name="check" id="papel">
 			<label>Tela</label><input type="checkbox" name="check" id="tela"><input type="text" id="telaTipo" name="tela" onfocus="this.value=''" placeholder="Algodón, Lino, Poliéster.">
@@ -52,5 +51,6 @@
 		<button id="save">Guardar</button>
 	</div>
 </body>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 <script src="secundario.js"></script>
 </html>
