@@ -5,6 +5,8 @@ var arraytext = locarray.join("/");
 var itemsPath = arraytext + "items/"
 var arraytext = arraytext + "fondo/"
 console.log("IT WORKS.")
+console.log(itemsPath)
+
 
 function randombg(){
   var random = Math.floor(Math.random() * 6) + 0;
@@ -21,10 +23,10 @@ function randombg(){
   console.log(random);
 }
 
-$(document).ready(function (){
-$("#save").click( function() {
+
+
+$("#save").click(function(){
   var itemName = "<h1>" + $("#name").val() + "</h1>";
-  var itemName1 = "<h1>" + $("#altName1").val() + "</h1>";
   var description = "<p>" + $("#desc").val() + "</p>";
   var desechado = "<p>" + $("#desecha").val() + "</p>";
   var enBolsa;
@@ -90,21 +92,22 @@ $("#save").click( function() {
   var link3 = $("#link3").val();
   var idea3 = "<a href=" + link3 + ">" + idea3 + "</a>"
 
-
   var final = "<script src=\"item.js\"></script>" + "\n" + "<link href=\"item.css\" rel=\"stylesheet\" type=\"text/css\"/>" + "\n" + "<body onload=\"randombg()\">" + "\n" + itemName + "\n" + description + "\n" + "<hr>" + "\n" + "<h3>Desechado:</h3>" + "\n" + desechado + "\n" + enBolsa + "\n" + "<hr>" + "\n" + "<h3>Materiales que lo componen:</h3>" + "\n" + metal + "\n" + plas + "\n" + madera + "\n" + papel + "\n" + tela + "\n" + "<h3>Forma de reciclado:</h3>" + "\n" + reciclado + "\n" + "<h3>Qué se puede hacer?</h3>" + "\n" + idea1 + "\n" + idea2 + "\n" + idea3; + "\n" + "<body>";
-  var filename =  document.getElementById("name").value.replace(/ /g, "-") + ".html";
-  console.log(filename);
+  var filename =  document.getElementById("name").value.replace(/ /g, "-").toLowerCase() + ".html";
   var blob = new Blob([final], {type: "text/plain"});
-  saveAs(blob, filename);
-  var filename =  document.getElementById("altName1").value.replace(/ /g, "-") + ".html";
-  console.log(filename);
-  saveAs(blob, filename);
-  var filename =  document.getElementById("altName2").value.replace(/ /g, "-") + ".html";
-  console.log(filename);
-  saveAs(blob, filename);
-  var filename =  document.getElementById("altName3").value.replace(/ /g, "-") + ".html";
-  saveAs(blob, filename);
-  console.log(filename);
-});
-
+  if (filename.length > 5) {
+	var file = saveAs(blob, filename);
+  }
+  var filename =  document.getElementById("altName1").value.replace(/ /g, "-").toLowerCase() + ".html";
+  if (filename.length > 5) {
+    saveAs(blob, filename);
+  }
+  var filename =  document.getElementById("altName2").value.replace(/ /g, "-").toLowerCase() + ".html";
+  if (filename.length > 5) {
+    saveAs(blob, filename);
+  }
+  var filename =  document.getElementById("altName3").value.replace(/ /g, "-").toLowerCase() + ".html";
+  if (filename.length > 5) {
+    saveAs(blob, filename);
+  }
 });
