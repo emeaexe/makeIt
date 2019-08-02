@@ -34,7 +34,7 @@
 		left: 66.5%;
 	}
 
-	.cont{
+	.blog{
 		position: absolute;
 		line-height: 1;
 		top: 49%;
@@ -165,8 +165,8 @@
 	}
 }
 
-/*
-@media screen and (max-width: 900px) {
+
+@media screen and (max-width: 320px) {
 	footer {
 		position:absolute;
 		bottom:0%;
@@ -181,10 +181,10 @@
 
 	.keRecicla{
 		position: absolute;
-		font-size: 20%;
+		font-size: 200%;
 		line-height: 1%;
-		top: 38%;
-		left: 15%;
+		top: 0%;
+		left: 10%;
 	}
 
 	#searcher{
@@ -248,7 +248,7 @@
 		font-size:90%;
 	}
 }
-*/
+
 
 @media screen and (max-width: 1000px) {
 	footer {

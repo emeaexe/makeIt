@@ -1,3 +1,4 @@
+<html>
 <head>
 	<title>MakeIt</title>
 	<script type="text/javascript" src="FileSaver.js"></script>
@@ -8,15 +9,16 @@
 </head>
 <body onload="randombg()">
 	<form action="" method="post">
+		<h1>Creando una nueva entrada del buscador</h1>
 		<div>
 			<label for="name">Nombre del objeto:</label>
-    		<input type="text" id="name" name="item_name" onfocus="this.value=''">
+    		<input type="text" id="name" name="item_name">
   		</div>
  		<div>
    			<label for="altName">Nombres alternativos:</label>
-			<input type="text" id="altName1" name="itemAltName" onfocus="this.value=''">
-			<input type="text" id="altName2" name="itemAltName" onfocus="this.value=''">
-			<input type="text" id="altName3" name="itemAltName" onfocus="this.value=''">
+			<input type="text" id="altName1" name="itemAltName">
+			<input type="text" id="altName2" name="itemAltName">
+			<input type="text" id="altName3" name="itemAltName">
 		</div>
   		<div>
 			<label for="desc">Descripción:</label>
@@ -26,7 +28,7 @@
 			<h3>Desechado:</h3>
 				<input type="text" name="desecha" onfocus="this.value=''" placeholder="Seco, limpio, desarmado..." id="desecha">
 				<p>En bolsa...</p>
-				<label>Verde</label><input type="checkbox" name="verde" id="verde"><label>Negra</label><input type="checkbox" name="negra" id="negra"><a href="https://recuperandovalor.cordoba.gob.ar/buscador/">Consultar horario de recolección para tu barrio (beta)</a>
+				<label>Verde</label><input type="checkbox" name="verde" id="verde"><label>Negra</label><input type="checkbox" name="negra" id="negra">
 		</div>
 		<div>
 			<h3>Materiales que lo componen:</h3>
@@ -41,10 +43,14 @@
 			<textarea id="reciclado">Describí cómo se recicla. Se puede desarmar? Hay que limpiarlo? Hace falta alguna herramienta? Calor? Secar al sol?</textarea>
 		</dir>
 		<dir>
-			<h3>Qué se puede hacer?</h3>
+			<h3>Cómo se puede reutilizar?</h3>
 			<input type="text" name="idea1" id="idea1" placeholder="Idea 1..."><input type="text" name="link1" id="link1" placeholder="Link...">
 			<input type="text" name="idea2" id="idea2" placeholder="Idea 2..."><input type="text" name="link2" id="link2" placeholder="Link...">
 			<input type="text" name="idea3" id="idea3" placeholder="Idea 3..."><input type="text" name="link3" id="link3" placeholder="Link...">
+			<h3>Cómo se puede reemplazar? Ej. Una bolsa de plástico por una de tela.</h3>
+				<input type="text" name="reemplaza" placeholder="Se puede reemplazar por " id="reemplaza">
+			<h3>Qué hacer si nos ofrecen uno de estos?</h3>
+				<input type="text" name="keHace" placeholder="Lo más conveniente es..." id="keAse">
 		</dir>
 	</form>
 	<div class="button">
@@ -52,5 +58,5 @@
 	</div>
 </body>
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-<script src="secundario.js"></script>
+<script src="crear.js"></script>
 </html>
