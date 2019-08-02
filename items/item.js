@@ -1,15 +1,19 @@
+var arraytext = "../fondo/"
 console.log("IT WORKS.")
+console.log(arraytext)
 
-//onload="randombg()"
 
 function randombg(){
-  var random = Math.floor(Math.random() * 4) + 0; //genera valor random entre 0 y 4.
+  var random = Math.floor(Math.random() * 6) + 0;
   if (random < 1){
-  		var random = 4; //si sale cero lo vuelve 4
+      var random = 6;
   }
-  var bigSize = [,"url(../fondo/a.png)",
-                "url(../fondo/b.png)",
-                "url(../fondo/c.png)",
-                "url(../fondo/d.png)"];
-  document.body.style.backgroundImage = bigSize[random]; //cambia el fondo de acuerdo con el numero random
+  var bigSize = [,"url(" + arraytext + "a.png)",
+                "url(" + arraytext + "b.png)",
+                "url(" + arraytext + "c.png)",
+                "url(" + arraytext + "d.png)",
+                "url(" + arraytext + "e.png)",
+                "url(" + arraytext + "f.png)",];
+  document.body.style.backgroundImage = bigSize[random];
+  console.log(random);
 }
