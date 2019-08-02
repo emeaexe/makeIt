@@ -20,6 +20,17 @@ function randombg(){
                 "url(" + arraytext + "f.png)",];
   document.body.style.backgroundImage = bigSize[random];
   console.log(random);
+
+  var placeholders = ['Botella de plástico...','Papel de diario...','Pilas alcalinas...','Lata de conserva...','Botella de cerveza...','Tapitas...']
+  if (random < 1){
+    var random = 5;
+  }
+  if (random === 6){
+    var random = 2;
+  }
+  var defPlace = placeholders[random]
+  console.log(defPlace);
+  document.getElementById("searcher").setAttribute("placeholder",defPlace);
 }
 
 function srch(){
