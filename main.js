@@ -40,6 +40,12 @@ function srch(){
 	var srchTrm = srchTrm + ".html"
 	var defPath = itemsPath + srchTrm
 	window.location.href = defPath;
+  var http = new XMLHttpRequest();
+  http.open('HEAD', defPath, false);
+  http.send();
+  if (http.status === 404){
+    window.location.href = fourofour.html;
+  }
 }
 
 $(document).keypress(function(e) {
