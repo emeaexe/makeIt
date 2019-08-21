@@ -1,4 +1,4 @@
-@media screen and (max-width: 2000px) {
+@media screen and (max-width: 1024px) {
 	footer {
 		position:absolute;
 		bottom:0%;
@@ -8,15 +8,15 @@
 	}
 
 	#creative{
-		width: 4%;
+		width: 7%;
 	}
 
 	.keRecicla{
 		position: absolute;
 		font-size: 350%;
 		line-height: 1%;
-		top: 32%;
-		left: 25%;
+		top: 36%;
+		left: 15%;
 	}
 
 	#searcher{
@@ -37,17 +37,17 @@
 	.blog{
 		position: absolute;
 		line-height: 1;
-		top: 49%;
+		top: 48%;
 		left: 30%;
-		font-size: 100%;
+		font-size: 170%;
 	}
 
 	.cre{
 		position: absolute;
 		line-height: 1;
-		top: 49%;
-		left: 55%;
-		font-size: 100%;
+		top: 48%;
+		left: 49%;
+		font-size: 170%;
 	}
 
 	.cent{
@@ -67,7 +67,7 @@
 
 	body {
 		padding: 5% 0;
-		width:100%
+		width: 100%;
 		height: 100%;
 		text-align: center;
 		font-family: 'Muli', sans-serif;
@@ -92,14 +92,14 @@
 	}
 
 	#creative{
-		width: 4%;
+		width: 10%;
 	}
 
 	.keRecicla{
 		position: absolute;
-		font-size: 200%;
+		font-size: 300%;
 		line-height: 1%;
-		top: 38%;
+		top: 37%;
 		left: 15%;
 	}
 
@@ -107,31 +107,34 @@
 		position: absolute;
 		line-height: 1%;
 		top: 45%;
-		width: 39%;
-		left: 27%;
+		height: 4%;
+		width: 50%;
+		left: 25%;
 	}
 
 	button{
 		position: absolute;
 		line-height: 1;
+		height: 4%;
+		width: 4%;
 		top: 45%;
-		left: 66.5%;
+		left: 76%;
 	}
 
-	.cont{
+	.blog{
 		position: absolute;
 		line-height: 1;
-		top: 49%;
+		top: 50%;
 		left: 30%;
-		font-size: 80%;
+		font-size: 150%;
 	}
 
 	.cre{
 		position: absolute;
 		line-height: 1;
-		top: 49%;
-		left: 47%;
-		font-size: 80%;
+		top: 50%;
+		left: 49%;
+		font-size: 150%;
 	}
 
 	.cent{
@@ -151,7 +154,7 @@
 
 	body {
 		padding: 5% 0;
-		width:100%
+		width: 100%;
 		height: 100%;
 		text-align: center;
 		font-family: 'Muli', sans-serif;
@@ -166,7 +169,7 @@
 }
 
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 425px) {
 	footer {
 		position:absolute;
 		bottom:0%;
@@ -176,14 +179,14 @@
 	}
 
 	#creative{
-		width: 4%;
+		width: 12%;
 	}
 
 	.keRecicla{
 		position: absolute;
 		font-size: 200%;
 		line-height: 1%;
-		top: 0%;
+		top: 38%;
 		left: 10%;
 	}
 
@@ -191,31 +194,34 @@
 		position: absolute;
 		line-height: 1%;
 		top: 45%;
-		width: 39%;
-		left: 27%;
+		height: 4%;
+		width: 50%;
+		left: 25%;
 	}
 
 	button{
 		position: absolute;
 		line-height: 1;
+		height: 4%;
+		width: 6%;
 		top: 45%;
-		left: 66.5%;
+		left: 76%;
 	}
 
-	.cont{
+	.blog{
 		position: absolute;
 		line-height: 1;
-		top: 49%;
+		top: 50%;
 		left: 30%;
-		font-size: 80%;
+		font-size: 100%;
 	}
 
 	.cre{
 		position: absolute;
 		line-height: 1;
-		top: 49%;
-		left: 47%;
-		font-size: 80%;
+		top: 50%;
+		left: 49%;
+		font-size: 100%;
 	}
 
 	.cent{
@@ -235,7 +241,7 @@
 
 	body {
 		padding: 5% 0;
-		width:100%
+		width: 100%;
 		height: 100%;
 		text-align: center;
 		font-family: 'Muli', sans-serif;
@@ -250,7 +256,7 @@
 }
 
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 375px) {
 	footer {
 		position:absolute;
 		bottom:0%;
@@ -260,46 +266,49 @@
 	}
 
 	#creative{
-		width: 4%;
+		width: 10%;
 	}
 
 	.keRecicla{
 		position: absolute;
-		font-size: 250%;
+		font-size: 150%;
 		line-height: 1%;
 		top: 38%;
-		left: 20%;
+		left: 15%;
 	}
 
 	#searcher{
 		position: absolute;
 		line-height: 1%;
 		top: 45%;
-		width: 39%;
-		left: 27%;
+		height: 4%;
+		width: 50%;
+		left: 25%;
 	}
 
 	button{
 		position: absolute;
 		line-height: 1;
+		height: 4%;
+		width: 6%;
 		top: 45%;
-		left: 66.5%;
+		left: 76%;
 	}
 
-	.cont{
+	.blog{
 		position: absolute;
 		line-height: 1;
-		top: 49%;
+		top: 50%;
 		left: 30%;
-		font-size: 80%;
+		font-size: 100%;
 	}
 
 	.cre{
 		position: absolute;
 		line-height: 1;
-		top: 49%;
-		left: 47%;
-		font-size: 80%;
+		top: 50%;
+		left: 49%;
+		font-size: 100%;
 	}
 
 	.cent{
@@ -319,7 +328,7 @@
 
 	body {
 		padding: 5% 0;
-		width:100%
+		width: 100%;
 		height: 100%;
 		text-align: center;
 		font-family: 'Muli', sans-serif;
@@ -330,5 +339,92 @@
 	#foot{
 		color: grey;
 		font-size:90%;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	footer {
+		position:absolute;
+		bottom:0%;
+		width: 99%;
+		height: 8%;   /* Height of the footer */
+		background: black;
+	}
+
+	#creative{
+		width: 10%;
+	}
+
+	.keRecicla{
+		position: absolute;
+		font-size: 130%;
+		line-height: 1%;
+		top: 40%;
+		left: 15%;
+	}
+
+	#searcher{
+		position: absolute;
+		line-height: 1%;
+		top: 45%;
+		height: 4%;
+		width: 50%;
+		left: 25%;
+	}
+
+	button{
+		position: absolute;
+		line-height: 1;
+		height: 4%;
+		width: 6%;
+		top: 45%;
+		left: 76%;
+	}
+
+	.blog{
+		position: absolute;
+		line-height: 1;
+		top: 49.5%;
+		left: 30%;
+		font-size: 90%;
+	}
+
+	.cre{
+		position: absolute;
+		line-height: 1;
+		top: 49.5%;
+		left: 49%;
+		font-size: 90%;
+	}
+
+	.cent{
+		width: 50%;
+		margin: 0 auto;
+		padding: 10% 0;
+	}
+
+	#cover{
+		padding: 5% 0;
+		width:100%
+		height: 100%;
+		text-align: center;
+		padding-bottom:60%;   /* Height of the footer */
+		background-color: rgba(204,204,204,0.4);
+	}
+
+	body {
+		padding: 5% 0;
+		width: 100%;
+		height: 100%;
+		text-align: center;
+		font-family: 'Muli', sans-serif;
+		background-size: cover;
+		padding-bottom: 8%;   /* Height of the footer */
+	}
+
+	#foot{
+		color: grey;
+		font-size:90%;
+		height: 10%;
 	}
 }
