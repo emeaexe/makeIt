@@ -58,10 +58,10 @@ $("#save").click(function(){
   var vir = document.getElementById("vidrio").checked;
   switch (vir) {
     case (vir = true):
-      plas = "Contiene vidrio";
+      vir = "Contiene vidrio";
     break;
-    case (viir = false):
-      plas = " ";
+    case (vir = false):
+      vir = " ";
     break;
   }
   var madera = document.getElementById("madera").checked;
