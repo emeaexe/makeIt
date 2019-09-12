@@ -1,4 +1,4 @@
-var myloc = window.location.href;
+﻿var myloc = window.location.href;
 var locarray = myloc.split("/");
 delete locarray[(locarray.length-1)];
 var arraytext = locarray.join("/");
@@ -43,7 +43,7 @@ $("#save").click(function(){
       metal = "Metal: " + document.getElementById("tipoMetal").value;
     break;
     case (metal = false):
-      metal = "No lo componen metales.";
+      metal = " ";
     break;
   }
   var plas = document.getElementById("plastic").checked;
@@ -52,7 +52,16 @@ $("#save").click(function(){
       plas = "Plástico: " + document.getElementById("plasticType").value;
     break;
     case (plas = false):
-      plas = "No lo componen plásticos.";
+      plas = " ";
+    break;
+  }
+  var vir = document.getElementById("vidrio").checked;
+  switch (vir) {
+    case (vir = true):
+      plas = "Contiene vidrio";
+    break;
+    case (viir = false):
+      plas = " ";
     break;
   }
   var madera = document.getElementById("madera").checked;
@@ -61,7 +70,7 @@ $("#save").click(function(){
       madera = "Madera.";
     break;
     case (madera = false):
-      madera = "No contiene madera.";
+      madera = " ";
     break;
   }
   var papel = document.getElementById("papel").checked;
@@ -70,7 +79,7 @@ $("#save").click(function(){
       papel = "Papel.";
     break;
     case (papel = false):
-      papel = "No contiene papel.";
+      papel = " ";
     break;
   }
   var tela = document.getElementById("tela").checked;
@@ -79,7 +88,7 @@ $("#save").click(function(){
       tela = "Tela: " + document.getElementById("telaTipo").value;
     break;
     case (tela = false):
-      tela = "No contiene tela.";
+      tela = " ";
     break;
   }
   var reciclado = "<p>" + $("#reciclado").val() + "</p>";
@@ -93,7 +102,7 @@ $("#save").click(function(){
   var keAse = "<p>" + $("#keAse").val() + "</p>";
 
 
-  var final = "<script src=\"item.js\"></script>" + "\n" + "<link href=\"item.css\" rel=\"stylesheet\" type=\"text/css\"/>" + "\n" + "<title>" + title + "</title>" + "\n" + "<body onload=\"randombg()\">" + "\n" + itemName + "\n" + description + "\n" + "<hr>" + "\n" + "<h3>Desechado:</h3>" + "\n" + desechado + "\n" + enBolsa + ". " + "<a href=" + "https://recuperandovalor.cordoba.gob.ar/buscador/" + ">Consultar horario de recolección para tu barrio (beta)</a>" + "\n" + "<hr>" + "\n" + "<h3>Materiales que lo componen:</h3>" + "\n" + metal + "\n" + plas + "\n" + madera + "\n" + papel + "\n" + tela + "\n" + "<h3>Forma de reciclado:</h3>" + "\n" + reciclado + "\n" + "<h3>Qué se puede hacer?</h3>" + "\n" + idea1 + "\n" + idea2 + "\n" + idea3 + "\n" + "<h3>" + "Reemplazo:" + "</h3>" + "\n" + reemplaza + "\n" + "<h3>" + "Qué debo hacer si me ofrecen este producto?" + "</h3>" + "\n" + keAse + "\n" + "</body>";
+  var final = "<script src=\"item.js\"></script>" + "\n" + "<link href=\"item.css\" rel=\"stylesheet\" type=\"text/css\"/>" + "\n" + "<title>" + title + "</title>" + "\n" + "<body onload=\"randombg()\">" + "\n" + itemName + "\n" + description + "\n" + "<hr>" + "\n" + "<h3>Desechado:</h3>" + "\n" + desechado + "\n" + enBolsa + ". " + "<a href=" + "https://recuperandovalor.cordoba.gob.ar/buscador/" + ">Consultar horario de recolección para tu barrio (beta)</a>" + "\n" + "<hr>" + "\n" + "<h3>Materiales que lo componen:</h3>" + "\n" + metal + "\n" + plas + "\n" + vir + "\n" + madera + "\n" + papel + "\n" + tela + "\n" + "<h3>Forma de reciclado:</h3>" + "\n" + reciclado + "\n" + "<h3>Qué se puede hacer?</h3>" + "\n" + idea1 + "\n" + idea2 + "\n" + idea3 + "\n" + "<h3>" + "Reemplazo:" + "</h3>" + "\n" + reemplaza + "\n" + "<h3>" + "Qué debo hacer si me ofrecen este producto?" + "</h3>" + "\n" + keAse + "\n" + "</body>";
   console.log(final);
 
   var filename =  document.getElementById("name").value.replace(/ /g, "-").toLowerCase() + ".html";
